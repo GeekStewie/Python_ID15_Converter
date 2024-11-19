@@ -16,3 +16,6 @@ def convert_to_18_char(sf_id):
     suffix = ''.join(calculate_position(sf_id[i:i+5]) for i in range(0, 15, 5))
     
     return sf_id + suffix
+    
+if __name__ == "__main__":
+    convert_to_18_char(input('Input Salesforce ID: "))
